@@ -1,9 +1,7 @@
 package com.mirza.tapsiriq;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
-
 import com.mirza.tapsiriq.ui.main.MainFragment;
 
 public class MainActivity extends AppCompatActivity {
@@ -14,8 +12,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.container, MainFragment.newInstance())
-                    .commitNow();
+                .replace(R.id.container, MainFragment.newInstance())
+                .commitNow();
         }
     }
 }
